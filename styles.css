@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #edf2f8;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+p {
+    color: hsla(217, 19%, 35%, 70%);
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(2, minmax(100px, min-content));
+    gap: 20px;
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+.daniel {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(263, 55%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 75% 10%;
+
+}
+
+
+.daniel p,
+
+.jonathan p,
+
+.patrick p {
+    color: hsl(0, 0%, 81%);
+}
+
+.jonathan {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+    padding: 20px;
+    border-radius: 10px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: hsl(0, 0%, 100%);
+
+
+}
+
+.patrick {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+
+}
+
+.kira {
+    padding: 20px;
+    border-radius: 10px;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    grid-row: 1 / -1;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+img {
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+}
+
+ul {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    left: -15px;
+}
+
+.jonathan .name-people,
+.jonathan h2,
+.daniel h2,
+.patrick h2,
+.daniel .name-people,
+.patrick .name-people {
+    color: hsl(0, 0%, 100%)
+}
+
+.graduate {
+    color: hsla(0, 0%, 100%, 50%)
+}
+
+.jeanette .graduate,
+.kira .graduate {
+    color: hsla(219, 29%, 14%, 50%);
+}
